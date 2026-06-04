@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "deploy": "npm run build && gh-pages -d dist -r git@github.com:VeriQAi/GradeBridge-ENG6-ProjectSubmissionJsonHelper.git"
+    "deploy": "npm run build && cd dist && git init -b gh-pages && git add -A && git commit -m Deploy && git push -f git@github.com:VeriQAi/GradeBridge-ENG6-ProjectSubmissionJsonHelper.git gh-pages"
   },
   "dependencies": {
     "react": "^18.3.1",
